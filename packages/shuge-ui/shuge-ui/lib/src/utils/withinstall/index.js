@@ -1,1 +1,1 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const l=e=>(e.install=n=>{const t=e.name||e.__name;console.log("comp",t,e),n.component("s-"+t,e)},e);exports.default=l;
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const l=e=>(e.install=n=>{const t=e.name||e.__name;console.log("comp",t,e),n.component(t,e)},e);exports.default=l;

@@ -17,6 +17,7 @@ importers:
       pinia: ^2.0.32
       prettier: ^2.8.4
       vite: ^4.1.4
+      vite-plugin-vue-setup-extend: ^0.4.0
       vue: ^3.2.47
       vue-router: ^4.1.6
     dependencies:
@@ -33,6 +34,7 @@ importers:
       eslint-plugin-vue: 9.9.0_eslint@8.36.0
       prettier: 2.8.4
       vite: 4.1.4
+      vite-plugin-vue-setup-extend: 0.4.0_vite@4.1.4
 
   packages/shuge-ui:
     specifiers:
@@ -46,6 +48,7 @@ importers:
       prettier: ^2.8.4
       sass: ^1.59.2
       vite: ^4.1.4
+      vite-plugin-vue-setup-extend: ^0.4.0
       vue: ^3.2.47
     dependencies:
       pinia: 2.0.33_vue@3.2.47
@@ -60,6 +63,7 @@ importers:
       prettier: 2.8.4
       sass: 1.59.2
       vite: 4.1.4_sass@1.59.2
+      vite-plugin-vue-setup-extend: 0.4.0_vite@4.1.4
 
 packages:
 
@@ -691,7 +695,7 @@ packages:
       '@babel/core': 7.21.3
       '@babel/plugin-transform-typescript': 7.21.3_@babel+core@7.21.3
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.21.3
-      vite: 4.1.4
+      vite: 4.1.4_sass@1.59.2
       vue: 3.2.47
     transitivePeerDependencies:
       - supports-color
@@ -704,7 +708,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.1.4
+      vite: 4.1.4_sass@1.59.2
       vue: 3.2.47
     dev: true
 
@@ -1855,6 +1859,16 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: true
+
+  /vite-plugin-vue-setup-extend/0.4.0_vite@4.1.4:
+    resolution: {integrity: sha512-WMbjPCui75fboFoUTHhdbXzu4Y/bJMv5N9QT9a7do3wNMNHHqrk+Tn2jrSJU0LS5fGl/EG+FEDBYVUeWIkDqXQ==}
+    peerDependencies:
+      vite: '>=2.0.0'
+    dependencies:
+      '@vue/compiler-sfc': 3.2.47
+      magic-string: 0.25.9
+      vite: 4.1.4_sass@1.59.2
     dev: true
 
   /vite/4.1.4:

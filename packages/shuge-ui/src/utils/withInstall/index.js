@@ -6,7 +6,7 @@ export default comp => {
     //注册组件
     console.log('comp', name, comp)
 
-    app.component('s-' + name, comp)
+    app.component(name, comp)
   }
   return comp
 }

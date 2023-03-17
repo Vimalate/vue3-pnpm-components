@@ -4,21 +4,20 @@
   </button>
 </template>
 
-<script>
+<!-- <script >
 export default {
-  name: 'Button',
-  props: {
-    type: {
-      type: String,
-      default: 'default'
-    }
-  },
-  computed: {
-    typeClass () {
-      return `button-${this.type}`
-    }
-  }
+  name: 'SButton',
 }
+</script> -->
+<script name="SButton" setup>
+import { computed } from 'vue'
+const props = defineProps({
+  type: {
+    type: String,
+    default: 'default'
+  }
+})
+const typeClass = computed(() => `button-${props.type}`)
 </script>
 
 <style lang="scss" scoped>

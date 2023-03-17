@@ -1,7 +1,7 @@
 <template>
   <header>
     app
-    <s-Button type="primary">SButton</s-Button>
+    <s-button type="primary">SButton</s-button>
   </header>
 </template>
 

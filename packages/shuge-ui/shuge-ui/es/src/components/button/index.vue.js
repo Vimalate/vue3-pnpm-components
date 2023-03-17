@@ -1,29 +1,24 @@
-import { openBlock as n, createElementBlock as r, normalizeClass as s, renderSlot as p } from "vue";
+import { computed as s, openBlock as p, createElementBlock as l, normalizeClass as u, unref as a, renderSlot as c } from "vue";
 import "./index.vue2.js";
-import a from "../../../_virtual/_plugin-vue_export-helper.js";
-const l = {
-  name: "Button",
+import d from "../../../_virtual/_plugin-vue_export-helper.js";
+const f = {
+  __name: "index",
   props: {
     type: {
       type: String,
       default: "default"
     }
   },
-  computed: {
-    typeClass() {
-      return `button-${this.type}`;
-    }
+  setup(o) {
+    const n = o, r = s(() => `button-${n.type}`);
+    return (t, e) => (p(), l("button", {
+      class: u(["button", a(r)]),
+      onClick: e[0] || (e[0] = (i) => t.$emit("click"))
+    }, [
+      c(t.$slots, "default", {}, void 0, !0)
+    ], 2));
   }
-};
-function u(t, e, d, f, c, o) {
-  return n(), r("button", {
-    class: s(["button", o.typeClass]),
-    onClick: e[0] || (e[0] = (i) => t.$emit("click"))
-  }, [
-    p(t.$slots, "default", {}, void 0, !0)
-  ], 2);
-}
-const b = /* @__PURE__ */ a(l, [["render", u], ["__scopeId", "data-v-b093f59f"]]);
+}, k = /* @__PURE__ */ d(f, [["__scopeId", "data-v-a8d0fc40"]]);
 export {
-  b as default
+  k as default
 };
