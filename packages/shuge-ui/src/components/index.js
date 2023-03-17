@@ -1,6 +1,7 @@
 import SButton from './button'
+import SInput from './input'
 
 
-export { SButton }
+export { SButton, SInput }
 
-export default [SButton]
+export default [SButton, SInput]

@@ -1,14 +1,18 @@
 <template>
   <header>
-    app
-    <s-button type="primary">SButton</s-button>
+    <!-- app -->
+    <s-button type="primary">button1</s-button>
+    <el-button>按钮</el-button>
+    <s-input v-model="value"></s-input>
   </header>
 </template>
 
 <script setup>
-// import { SButton } from '@vimalakirti/shuge-ui'
+import { ref } from 'vue'
+import { SButton,SInput } from '@vimalakirti/shuge-ui'
 // import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
+const value = ref('')
 </script>
 <style scoped>
 header {

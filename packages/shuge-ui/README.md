@@ -10,6 +10,11 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+```
+  "main": "./ui/lib/index.js",
+  "module": "./ui/es/index.js",
+```
+
 ## Project Setup
 
 ```sh

@@ -26,6 +26,7 @@ const typeClass = computed(() => `button-${props.type}`)
   padding: 8px 16px;
   font-size: 16px;
   cursor: pointer;
+  // border: none;
 
   &-default {
     background-color: #eee;

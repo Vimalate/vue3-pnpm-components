@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const u=require("./src/components/index.js"),i=require("./src/components/button/index.js"),l={install:e=>u.default.forEach(t=>e.use(t))};exports.SButton=i.default;exports.default=l;

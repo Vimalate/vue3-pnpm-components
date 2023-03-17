@@ -10,7 +10,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@vimalakirti/shuge-ui": "workspace:^0.0.1",
+    "@vimalakirti/shuge-ui": "workspace:*",
+    "element-plus": "^2.3.0",
     "pinia": "^2.0.32",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"

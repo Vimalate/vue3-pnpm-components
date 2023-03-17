@@ -8,6 +8,7 @@ import VueSetupExtend from 'vite-plugin-vue-setup-extend'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), vueJsx(), VueSetupExtend()],
+  base: './',
   // build: {
   //   lib: {
   //     // eslint-disable-next-line no-undef
@@ -38,7 +39,7 @@ export default defineConfig({
     //cssCodeSplit: true,
     rollupOptions: {
       //忽略打包vue文件
-      external: ['vue'],
+      external: ['vue','element-plus'],
       input: ['index.js'],
       output: [
         {
@@ -50,7 +51,7 @@ export default defineConfig({
           exports: 'named',
           //配置打包根目录
           // eslint-disable-next-line no-undef
-          dir: resolve(__dirname, './shuge-ui/es'),
+          dir: resolve(__dirname, './ui/es'),
         },
         {
           format: 'cjs',
@@ -61,7 +62,7 @@ export default defineConfig({
           exports: 'named',
           //配置打包根目录
           // eslint-disable-next-line no-undef
-          dir: resolve(__dirname, './shuge-ui/lib'),
+          dir: resolve(__dirname, './ui/lib'),
         },
       ],
     },
@@ -73,7 +74,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     }
   }
 })

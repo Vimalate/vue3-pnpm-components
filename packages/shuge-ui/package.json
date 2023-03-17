@@ -1,11 +1,11 @@
 {
   "name": "@vimalakirti/shuge-ui",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": false,
-  "main": "index.js",
-  "module": "index.js",
+  "main": "./ui/lib/index.js",
+  "module": "./ui/es/index.js",
   "files": [
-    "shuge-ui"
+    "ui"
   ],
   "scripts": {
     "dev": "vite",
@@ -15,6 +15,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "element-plus": "^2.3.0",
     "pinia": "^2.0.32",
     "vue": "^3.2.47"
   },
