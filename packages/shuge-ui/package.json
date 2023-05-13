@@ -1,9 +1,9 @@
 {
   "name": "@vimalakirti/shuge-ui",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "private": false,
-  "main": "./ui/lib/index.js",
-  "module": "./ui/es/index.js",
+  "main": "./index.js",
+  "module": "./index.js",
   "files": [
     "ui"
   ],
